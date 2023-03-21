@@ -1,0 +1,294 @@
+
+    header{
+        width: 60%;
+        height: 150px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid gray;
+        border-radius: 15px;
+        .flex1{
+            width: 50%;
+            margin-top: 15px;
+            margin-left: 10%;
+        }
+        .flex2{
+            width: 50%;
+            margin-top: 15px;
+            .score{
+              p,h1{
+                color: black;
+                background-color: rgb(242, 242, 242);
+                letter-spacing: 1px;
+              }
+              padding: 10px;
+              margin-left: 40%;
+              width: 30%;
+              height: 70%;
+              text-align: center;
+              border-radius: 9px;
+              background-color: rgb(242, 242, 242);
+            }
+        }
+        h1{
+            color: white;
+        }
+    }
+
+.triangle{
+    height: 350px;
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+    .svg{
+      margin: 0 auto;
+      width: 370px;
+      height: 100%;
+      position: relative;
+    }
+  #scissors,#rock,#paper{
+    background-color: white;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    padding: 35px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+
+ 
+    svg{
+        background-color: white;
+        transform: scale(1.5);
+    }
+  }
+  #scissors{
+    left: 0;
+    top: -25px;
+    border: 10px solid red;
+  }
+  #rock{
+    left: 30%;
+    bottom: 10px;
+    border: 10px solid blue;
+  }
+  #paper{
+    right: 0;
+    top: -25px;
+    border: 10px solid orange;
+  }
+}
+    
+
+
+@media only screen and(max-width:760px){
+  header{
+    width: 80%;
+    .score{
+      width: 40%;
+    }
+  }
+ .triangle{
+  width: 80%;
+   svg{
+    margin: 0 auto;
+   }
+ 
+ }
+}
+
+
+
+@media only screen and(max-width:445px){
+  header{
+    width: 90%;
+  
+  }
+ .triangle{
+  width: 90%;
+   .svg{
+    margin: 0 auto;
+    width: 90%;
+    svg{
+      transform: scale(0.6);
+      margin: 0 auto;
+    }
+    button{
+      width: 45%!important;
+      height: 45%!important;
+      position: relative;
+    &#rock{
+      bottom: 10%;
+    }
+      svg{
+        position: absolute;
+        transform: scale(0.6);
+        left: 28%;
+        top: 30%;
+        border-radius: 5%;
+      }
+    }
+   }
+ 
+ }
+}
+
+
+
+@media only screen and(max-width:390px) {
+  header {
+    display: block;
+    width: 90%;
+    .flex1{
+      width: 100%;
+      height: 30%;
+      display: flex;
+      justify-content: space-between;
+      margin: 2px;
+      h1{
+
+        font-size: 15px!important;
+      }
+    }
+    .flex2{
+      width: 50%!important;
+      height: auto;
+      .score{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 2px;
+        justify-content: space-around;
+        p{
+          font-size: 15px!important;
+        }
+        h1{
+          font-weight: 400;
+          margin: 2px;
+        }
+      }
+    }
+
+  }
+
+    .triangle {
+      width: 90%;
+  
+      .svg {
+        margin: 0 auto;
+        width: 90%;
+       #main-svg{
+     display: none;
+
+       }
+        button {
+          width: 45% !important;
+          height: 45% !important;
+          position: relative;
+  
+          &#rock {
+            bottom: 10%;
+          }
+  
+     
+        }
+      }
+  
+    }
+}
+
+@media only screen and(max-width:350px){
+  header{
+    .flex2{
+      width: 80%!important;
+      .score{
+        width: 100%;
+      }
+    }
+  }
+  .triangle {
+      width: 90%;
+  
+      .svg {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        position: static!important;
+  
+        #main-svg {
+          display: none;
+        }
+
+        button{
+          display: block;
+          position: static!important;
+          width: 90%!important;
+          svg{
+            position: static;
+            width: auto;
+          }
+          
+        }
+
+       
+        
+            
+     
+  
+  
+        
+      }
+  
+    }
+}
+@media only screen and(max-width:200px){
+  header{
+    .flex1{
+      h1{
+        font-size: 10px!important;
+      }
+    }
+    .flex2{
+      width: 80%!important;
+      .score{
+        width: 100%;
+      }
+    }
+  }
+  .triangle {
+      width: 90%;
+  
+      .svg {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        position: static!important;
+  
+        #main-svg {
+          display: none;
+        }
+
+        button{
+          position: static!important;
+          width: 85vw!important;
+       
+          svg{
+            position: static;
+            border-radius: 10px;
+          }
+          
+        }
+
+       
+        
+            
+     
+  
+  
+        
+      }
+  
+    }
+}

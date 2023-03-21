@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+    background-color: hsl(214, 47%, 23%) ;
+    p{
+      letter-spacing: 1px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    button{
+        font-family: 'Roboto',sans-serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+ 
+}
+html, body { height: 100%;}
+body { margin: 0;  }
+
